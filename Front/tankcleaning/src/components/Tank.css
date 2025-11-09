@@ -3,3 +3,25 @@
     margin: 0;
     padding: 0;
 }
+
+#logoitsa {
+    width: 80px;
+}
+
+.maxwidth {
+    width: 960px;   
+}
+
+.cabeza{
+    display: flex;
+    align-items: center;
+    background-color: blanchedalmond;
+}
+
+.isologo{
+    padding: 8px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    background-color: aqua;
+}
