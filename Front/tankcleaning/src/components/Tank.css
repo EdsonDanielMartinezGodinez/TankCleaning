@@ -135,6 +135,58 @@ button{
 }
 /*Button decorations*/
 
+/*main*/
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem;
+}
+
+/*Services*/
+.titulo{
+    text-align: center;
+    color: black;
+}
+
+.iconos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.figura{
+    flex: 25%;
+    padding: 8px;
+    color: black;
+}
+
+.azulMediocreBold{
+    color: #164166;
+    font-weight: bolder;
+}
+
+main:nth-child(even){
+    background-color: white;
+}
+
+.serviceCards{ /*Nombre de la seccion */
+    flex-direction: row;
+}
+
+.card{ /*Nombre de la tarjeta de servicio*/
+    max-width: 400px;
+}
+
+.serviceDesc{ /* div dentro de la tarjeta (el azul)*/
+    align-items: center;
+    text-align: center;
+    background-color: #164166;
+}
 
 /*Media queris*/
 @media (max-width: 600px) {
