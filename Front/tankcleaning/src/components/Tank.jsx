@@ -62,7 +62,6 @@ export const Tank = () => {
                         <p>Disponibles en todo momento con rapidez.</p>
                     </div>
                 </section>
-
                 <section className='serviceCards maxwidth'>
                     <div className='card'>
                         <img className='serviceImg' src={confinados} alt="Trabajador limpiando espacio confinado"/>
@@ -80,7 +79,6 @@ export const Tank = () => {
                             <a href=""><button className='ServiceBut'>Conoce Más</button></a>
                         </div>
                     </div>
-
                 </section>
 
             </article>
