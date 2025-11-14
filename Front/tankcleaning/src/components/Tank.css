@@ -61,9 +61,11 @@ header{
 .cabezaBody{
     flex-direction: column;
     align-items: center;
-    text-align: center;
     margin: 10rem 0;
+    padding: 0;
+    text-align: center;
 }
+
 .cotizacontacto{
     display: flex;
     gap: 3.75rem;
@@ -156,13 +158,17 @@ main{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding-bottom: 3rem;
+    flex-grow: 1;
 }
 
 .titulo{
-    text-align: center;
     display: flex;
-    justify-content: center;
     color: black;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .linea{
@@ -188,8 +194,11 @@ main{
     font-weight: bolder;
 }
 
-main:nth-child(even){
+main:nth-child(odd){
     background-color: white;
+}
+main:nth-child(even){
+    background-color: #F3FAFF;
 }
 
 .serviceCards{ /*Nombre de la seccion */
@@ -232,6 +241,7 @@ main:nth-child(even){
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    flex-grow: 1;
 }
 
 .conocenos{

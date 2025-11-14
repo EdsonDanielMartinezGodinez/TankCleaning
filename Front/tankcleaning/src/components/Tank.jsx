@@ -31,7 +31,7 @@ export const Tank = () => {
                 <img id="hamburguesa" src={row} alt="Icono de Menu" />
             </section>
             <section className='cabezaBody maxwidth '>
-                <div>
+                <div className='frase'>
                     <h1>Cuidamos cada detalle con <b className='textYellow'>limpieza</b> experta y segura en <b className='textYellow'>espacios confinados</b> y <b className='textYellow'>plataformas offshore</b></h1>
                 </div>
                 <div className='cotizacontacto'>
