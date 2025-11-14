@@ -166,6 +166,7 @@ main{
 }
 
 .linea{
+    border-radius: 1rem;
     border: 0.3rem solid #164166;
     width: 20rem;
 }
@@ -224,6 +225,14 @@ main:nth-child(even){
     font-weight: bolder;
     font-size: 1.125rem;
 }
+
+/*About Us*/
+.AboutUs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 /*Main section*/
 
 /*Media queris*/

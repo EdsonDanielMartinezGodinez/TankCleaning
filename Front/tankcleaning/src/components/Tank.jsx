@@ -80,9 +80,28 @@ export const Tank = () => {
                         </div>
                     </div>
                 </section>
-
             </article>
-            <article className='AboutUs'></article>
+
+            <article className='AboutUs'>
+                <section className='titulo maxwidth'>
+                    <h2>¿Quienes somos?</h2>
+                    <div className='linea'></div>
+                </section>
+
+                <section className='HisMisVis'>
+                    <div className=''>
+                        <img id='Historia' src={apreton} alt="Historia de Goitsa"/>
+                        <div className='subtitulo'>
+                            <img id='camasutra' src={apreton} alt="Libro"/>
+                        </div>
+                        <div className='parrafo'>
+                            <p>GRUPO GOITSA TECNICOS Y CONSULTORES S.A. DE C.V., 
+                                es una empresa 100% mexicana fundada en el año 2013, 
+                                ubicada en Ciudad del Carmen, Campeche, con actividad a nivel nacional.</p>
+                        </div>
+                    </div>
+                </section>
+            </article>
             <article></article>
             <article></article>
         </main>
