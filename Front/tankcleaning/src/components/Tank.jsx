@@ -8,6 +8,8 @@ import apreton from "./resources/apreton.png"
 import reloj from "./resources/reloj.png"
 import confinados from "./resources/confinados.jpeg"
 import plataformas from "./resources/plataformas.jpeg"
+import camasutra from "./resources/camasutra.png"
+
 
 export const Tank = () => {
   return (
@@ -88,11 +90,11 @@ export const Tank = () => {
                     <div className='linea'></div>
                 </section>
 
-                <section className='HisMisVis'>
-                    <div className=''>
-                        <img id='Historia' src={apreton} alt="Historia de Goitsa"/>
+                <section className='conocenos maxwidth'>
+                    <div className='HisMisVis'>
+                        <img id='imagen' src={apreton} alt="Historia de Goitsa"/>
                         <div className='subtitulo'>
-                            <img id='camasutra' src={apreton} alt="Libro"/>
+                            <img id='simbolos' src={camasutra} alt="Libro"/>
                         </div>
                         <div className='parrafo'>
                             <p>GRUPO GOITSA TECNICOS Y CONSULTORES S.A. DE C.V., 
@@ -101,6 +103,7 @@ export const Tank = () => {
                         </div>
                     </div>
                 </section>
+
             </article>
             <article></article>
             <article></article>
