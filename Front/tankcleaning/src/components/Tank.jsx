@@ -8,6 +8,8 @@ import apreton from "./resources/apreton.png"
 import reloj from "./resources/reloj.png"
 import confinados from "./resources/confinados.jpeg"
 import plataformas from "./resources/plataformas.jpeg"
+import camasutra from "./resources/camasutra.png"
+
 
 export const Tank = () => {
   return (
@@ -80,9 +82,29 @@ export const Tank = () => {
                         </div>
                     </div>
                 </section>
+            </article>
+
+            <article className='AboutUs'>
+                <section className='titulo maxwidth'>
+                    <h2>¿Quienes somos?</h2>
+                    <div className='linea'></div>
+                </section>
+
+                <section className='conocenos maxwidth'>
+                    <div className='HisMisVis'>
+                        <img id='imagen' src={apreton} alt="Historia de Goitsa"/>
+                        <div className='subtitulo'>
+                            <img id='simbolos' src={camasutra} alt="Libro"/>
+                        </div>
+                        <div className='parrafo'>
+                            <p>GRUPO GOITSA TECNICOS Y CONSULTORES S.A. DE C.V., 
+                                es una empresa 100% mexicana fundada en el año 2013, 
+                                ubicada en Ciudad del Carmen, Campeche, con actividad a nivel nacional.</p>
+                        </div>
+                    </div>
+                </section>
 
             </article>
-            <article className='AboutUs'></article>
             <article></article>
             <article></article>
         </main>

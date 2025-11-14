@@ -166,6 +166,7 @@ main{
 }
 
 .linea{
+    border-radius: 1rem;
     border: 0.3rem solid #164166;
     width: 20rem;
 }
@@ -211,6 +212,7 @@ main:nth-child(even){
 }
 
 .serviceDesc{ /* div dentro de la tarjeta (el azul)*/
+    max-width: 100%;
     align-items: center;
     text-align: center;
     background-color: #164166;
@@ -224,6 +226,20 @@ main:nth-child(even){
     font-weight: bolder;
     font-size: 1.125rem;
 }
+
+/*About Us*/
+.AboutUs{ /* Articulo donde van la historia, la mision y la vision*/
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.conocenos{
+
+}
+
+
+
 /*Main section*/
 
 /*Media queris*/
