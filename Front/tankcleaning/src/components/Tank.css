@@ -337,6 +337,43 @@ article:nth-child(even){
 
 /*Main section*/
 
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background-color: #091c2d;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.piePrincipal{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.direc{
+    display: flex;
+    flex-direction: column;
+}
+.footP{
+    font-weight: bolder;
+}
+.footP, .paddSp{
+    padding: 1rem;
+}
+.paddSp{
+    color: rgba(212, 212, 212, 0.899);
+}
+.linkedin, .e-mail, .tel, .wats{
+    display: flex;
+    align-items: center;
+}
+#sinpad{
+    padding: 1rem 0;
+}
+/*Footer*/
+
 /*Media queris*/
 @media (max-width: 600px) {
     .maxwidth {

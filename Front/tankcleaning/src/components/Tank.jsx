@@ -18,6 +18,10 @@ import junta from "./resources/junta.jpg"
 import casco from "./resources/casco.png"
 import mano from "./resources/mano.png"
 import calidad from "./resources/calidad.png"
+import whats from "./resources/wtasapi.png"
+import tel from "./resources/telefono.png"
+import mail from "./resources/sobre.png"
+import ink from "./resources/linkedin.png"
 
 
 export const Tank = () => {
@@ -122,7 +126,7 @@ export const Tank = () => {
                             </div>
                             <p className='pPadding'>Solucionar las necesidades y retos de nuestros clientes mediante servicios rentables, 
                                sustentables e innovadores, con altos estándares de calidad, creatividad y responsabilidad social, 
-                               generando valor para nuestra gente, clientes y accionistas.</p>
+                               generando valor para nuestra gente, clientes y accionistas.</p>
                         </div>
                     </div>
                     <div className='Mis'>
@@ -134,7 +138,7 @@ export const Tank = () => {
                             </div>
                             <p className='pPadding'>Ser una empresa líder en ingeniería, asesoría, gestión, 
                                capacitación y mantenimiento en la industria petrolera, marítima y comercial, 
-                               desarrollando y operando proyectos sólidos, rentables y diversificados.</p>
+                               desarrollando y operando proyectos sólidos, rentables y diversificados.</p>
                         </div>
                     </div>
                 </section>
@@ -166,8 +170,48 @@ export const Tank = () => {
             <article></article>
         </main>
         <footer>
-        
-
+            <section className='piePrincipal'>
+                <div className='isologo'>
+                    <img id='logoitsa' src={logo} alt="Goitsa Logo"/>
+                    <p className='grupogoitsa'><b>Grupo Goitsa</b></p>
+                </div>
+                <div className='Navegar direc'>
+                    <p className='footP'>Navegar</p>
+                    <a href=""><button className='navBut paddSp'>Servicios</button></a>
+                    <a href=""><button className='navBut paddSp'>Nosotros</button></a>
+                    <a href=""><button className='navBut paddSp'>Nuestra Experiencia</button></a>
+                    <a href=""><button className='navBut paddSp'>Contactanos</button></a>
+                </div>
+                <div className='Enlaces direc'>
+                    <p className='footP'>Enlaces</p>
+                    <a href=""><button className='navBut paddSp'>Politicas de Privacidad</button></a>
+                    <a href=""><button className='navBut paddSp'>Aviso Legal</button></a>
+                    <a href=""><button className='navBut paddSp'>Terminos y Condiciones</button></a>
+                    <a href=""><button className='navBut paddSp'>Politica de Cookies</button></a>
+                </div>
+                <div className='Contacto direc'>
+                    <p className='footP' id='sinpad'>Contacto</p>
+                    <div className='linkedin'>
+                        <img src={ink} alt="Linkedin Icon" />
+                        <a href=""><button className='navBut paddSp'>Grupo Goitsa</button></a>
+                    </div>
+                    <div className='e-mail'>
+                        <img src={mail} alt="E-mail Icon" />
+                        <a href=""><button className='navBut paddSp'>grupo.goitsa@outlook.com</button></a>
+                    </div>
+                    <div className='tel'>
+                        <img src={tel} alt="Telefono Icon" />
+                        <a href=""><button className='navBut paddSp'>+52 (938) 1030740</button></a>
+                    </div>
+                    <div className='wats'>
+                        <img src={whats} alt="Whatsapp Icon" />
+                        <a href=""><button className='navBut paddSp'>+52 (938) 1030740</button></a>
+                    </div>
+                </div>
+            </section>
+            <section className='copy'>
+                <p>@ 2025 Grupo Goitsa All rights reserved</p>
+            </section>
         </footer>
     </Fragment>
   )
