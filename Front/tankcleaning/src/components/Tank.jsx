@@ -15,6 +15,9 @@ import offshore from "./resources/ejofshore.jpeg"
 import marcador from "./resources/marcador.png"
 import mundo from "./resources/mundo (1).png"
 import junta from "./resources/junta.jpg"
+import casco from "./resources/casco.png"
+import mano from "./resources/mano.png"
+import calidad from "./resources/calidad.png"
 
 
 export const Tank = () => {
@@ -96,6 +99,7 @@ export const Tank = () => {
                     <h2>¿Quienes somos?</h2>
                     <div className='linea'></div>
                 </section>
+
                 <section className='conocenos maxwidth'>
                     <div className='Mis'>
                         <img className='imagen' src={hapreton} alt="Historia de Goitsa"/>
@@ -134,15 +138,37 @@ export const Tank = () => {
                         </div>
                     </div>
                 </section>
+
                 <section className='socialProve maxwidth'>
                     <img id="empresarios" src={junta} alt="Imagen de empresarios" />
                     <div className='overlay2'></div>
+
+                    <p className='SubtConfianza'>¿Por qué confiar en nosotros?</p>
+                    <div className='confianzas'>
+                        <div className='elementoConfianza'>
+                            <img className='confi' src={mano} alt="Mano con plantita"/>
+                            <p>Compromiso con la sostenibilidad</p>
+                        </div>
+
+                        <div className='elementoConfianza'>
+                            <img className='confi' src={calidad} alt="Mucha calidad"/>
+                            <p>Certificaciones: [ISO 9001, a confirmar].</p>
+                        </div>
+
+                        <div className='elementoConfianza'>
+                            <img className='confi' src={casco} alt="Casco de seguridad"/>
+                            <p>Seguridad de vanguardia</p>
+                        </div>
+                    </div>
                 </section>
             </article>
             <article></article>
             <article></article>
         </main>
-        <footer></footer>
+        <footer>
+        
+
+        </footer>
     </Fragment>
   )
 }
