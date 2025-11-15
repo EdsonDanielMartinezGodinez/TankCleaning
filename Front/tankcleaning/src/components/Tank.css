@@ -150,16 +150,17 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 3rem;
+    
 }
 
 /*Services*/
-.services{
+article{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding-bottom: 3rem;
+    gap: 2.5rem;
     flex-grow: 1;
+    width: 100%;
+    padding: 4rem 3rem;
 }
 
 .titulo{
@@ -194,11 +195,11 @@ main{
     font-weight: bolder;
 }
 
-main:nth-child(odd){
-    background-color: white;
+article:nth-child(odd){
+    background-color: white; 
 }
-main:nth-child(even){
-    background-color: #F3FAFF;
+article:nth-child(even){
+    background-color:#F3FAFF;
 }
 
 .serviceCards{ /*Nombre de la seccion */
@@ -208,20 +209,19 @@ main:nth-child(even){
 
 .card{ /*Nombre de la tarjeta de servicio*/
     max-width: 400px;
-    
     padding: 0;
     margin: 0;
 }
 
 .serviceImg{
-    max-width: 100%;
+    width: 100%;
     border-radius: 1rem 1rem 0 0;
     display: block;
     height: auto;
 }
 
 .serviceDesc{ /* div dentro de la tarjeta (el azul)*/
-    max-width: 100%;
+    width: 100%;
     align-items: center;
     text-align: center;
     background-color: #164166;
@@ -237,18 +237,69 @@ main:nth-child(even){
 }
 
 /*About Us*/
-.AboutUs{ /* Articulo donde van la historia, la mision y la vision*/
+.conocenos{
+    color: black;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
+}
+.Mis{
+    display: flex;
+    align-items: center;
     flex-grow: 1;
 }
-
-.conocenos{
-
+.reverse{
+    flex-direction: row-reverse;
+}
+.imagen{
+    border-radius: 1rem;
+    border: 0.34rem solid #164166;
+    width: 100%;
+    height: auto;
+}
+.sub-subtitulo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #164166;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 1rem 3rem;
+    border-bottom: 0.34rem solid #164166;
+    width: 100%;
+}
+.pPadding{
+    padding: 1rem 3rem;
+    text-align: justify;
+}
+.socialProve{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2rem;
 }
 
-
+#empresarios{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 0;
+}
+.overlay2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: hsl(208, 65%, 24%, 0.84);
+}
 
 /*Main section*/
 

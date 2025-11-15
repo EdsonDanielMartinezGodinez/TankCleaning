@@ -9,10 +9,17 @@ import reloj from "./resources/reloj.png"
 import confinados from "./resources/confinados.jpeg"
 import plataformas from "./resources/plataformas.jpeg"
 import camasutra from "./resources/camasutra.png"
+import hapreton from "./resources/apreton.jpeg"
+import mirar from "./resources/mirar.jpeg"
+import offshore from "./resources/ejofshore.jpeg"
+import marcador from "./resources/marcador.png"
+import mundo from "./resources/mundo (1).png"
+import junta from "./resources/junta.jpg"
 
 
 export const Tank = () => {
   return (
+    
     <Fragment>
         <header>
             <section className='cabeza  maxwidth '>
@@ -89,21 +96,48 @@ export const Tank = () => {
                     <h2>¿Quienes somos?</h2>
                     <div className='linea'></div>
                 </section>
-
                 <section className='conocenos maxwidth'>
-                    <div className='HisMisVis'>
-                        <img id='imagen' src={apreton} alt="Historia de Goitsa"/>
+                    <div className='Mis'>
+                        <img className='imagen' src={hapreton} alt="Historia de Goitsa"/>
                         <div className='subtitulo'>
-                            <img id='simbolos' src={camasutra} alt="Libro"/>
+                            <div className='sub-subtitulo'>
+                                <img id='simbolos' src={camasutra} alt="Libro"/>
+                                <p>Nuestra Historia</p>
+                            </div>
+                            <p className='pPadding'>GRUPO GOITSA TECNICOS Y CONSULTORES S.A. DE C.V., 
+                            es una empresa 100% mexicana fundada en el año 2013, 
+                            ubicada en Ciudad del Carmen, Campeche, con actividad a nivel nacional.</p>
                         </div>
-                        <div className='parrafo'>
-                            <p>GRUPO GOITSA TECNICOS Y CONSULTORES S.A. DE C.V., 
-                                es una empresa 100% mexicana fundada en el año 2013, 
-                                ubicada en Ciudad del Carmen, Campeche, con actividad a nivel nacional.</p>
+                    </div>
+                    <div className='Mis reverse'>
+                        <img className='imagen' src={mirar} alt="Mision de Goitsa"/>
+                        <div className='subtitulo'>
+                            <div className='sub-subtitulo'>
+                                <img id='simbolos' src={marcador} alt="Lista"/>
+                                <p>Nuestra Mision</p>
+                            </div>
+                            <p className='pPadding'>Solucionar las necesidades y retos de nuestros clientes mediante servicios rentables, 
+                               sustentables e innovadores, con altos estándares de calidad, creatividad y responsabilidad social, 
+                               generando valor para nuestra gente, clientes y accionistas.</p>
+                        </div>
+                    </div>
+                    <div className='Mis'>
+                        <img className='imagen' src={offshore} alt="Historia de Goitsa"/>
+                        <div className='subtitulo'>
+                            <div className='sub-subtitulo'>
+                                <img id='simbolos' src={mundo} alt="Mundo"/>
+                                <p>Nuestra Vision</p>
+                            </div>
+                            <p className='pPadding'>Ser una empresa líder en ingeniería, asesoría, gestión, 
+                               capacitación y mantenimiento en la industria petrolera, marítima y comercial, 
+                               desarrollando y operando proyectos sólidos, rentables y diversificados.</p>
                         </div>
                     </div>
                 </section>
-
+                <section className='socialProve maxwidth'>
+                    <img id="empresarios" src={junta} alt="Imagen de empresarios" />
+                    <div className='overlay2'></div>
+                </section>
             </article>
             <article></article>
             <article></article>
