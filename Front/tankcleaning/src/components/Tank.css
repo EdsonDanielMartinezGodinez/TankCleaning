@@ -141,6 +141,12 @@ button{
     color: black;
     font-weight: bolder;
 }
+.ServiceBut:hover{
+    background-color: #ffad09;
+    transition: 0.5s;
+    transform: scale(1.2);
+    color: white;
+}
 /*Button decorations*/
 
 /*main*/
@@ -162,6 +168,7 @@ article{
     flex-grow: 1;
     width: 100%;
     padding: 4rem 3rem;
+    height: auto;
 }
 
 .titulo{
@@ -176,7 +183,7 @@ article{
 .linea{
     border-radius: 1rem;
     border: 0.3rem solid #164166;
-    width: 20rem;
+    width: 40%;
 }
 
 .iconos{
@@ -203,13 +210,13 @@ article:nth-child(even){
     background-color:#F3FAFF;
 }
 
-.serviceCards{ /*Nombre de la seccion */
+.serviceCards{
     flex-direction: row;
     justify-content: space-between;
 }
 
-.card{ /*Nombre de la tarjeta de servicio*/
-    max-width: 400px;
+.card{ 
+    max-width: 40%;
     padding: 0;
     margin: 0;
 }
@@ -244,6 +251,7 @@ article:nth-child(even){
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    width: 100%;
 }
 .Mis{
     display: flex;
@@ -257,7 +265,12 @@ article:nth-child(even){
     border-radius: 1rem;
     border: 0.34rem solid #164166;
     width: 100%;
+    object-fit: cover;
     height: auto;
+}
+.subtitulo{
+    display: flex;
+    flex-direction: column;
 }
 .sub-subtitulo{
     display: flex;
@@ -276,7 +289,8 @@ article:nth-child(even){
 }
 .socialProve{
     width: 100%;
-    height: 25rem;
+    min-height: 320px;
+    height: auto;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -299,6 +313,7 @@ article:nth-child(even){
 }
 .overlay2{
     position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     top: 0;
@@ -311,13 +326,19 @@ article:nth-child(even){
     z-index: 3;
     font-size: 1.5rem;
     font-weight: bolder;
+    max-width: 100%;
+    text-align: center;
 }
 
 .confianzas{
-    z-index: 2;
+    z-index: 3;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    max-width: 100%;
 }
 
 .elementoConfianza{
@@ -326,7 +347,7 @@ article:nth-child(even){
     align-items: center;
     gap: 1rem;
     text-align: center;
-    flex: 33%;
+    flex: 25%;
     font-weight: bolder;
     padding: 0.5rem;
 }
@@ -350,11 +371,16 @@ footer{
 .piePrincipal{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 2rem;
+}
+.copy{
+    justify-content: center;
 }
 .direc{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
 }
 .footP{
     font-weight: bolder;
@@ -375,58 +401,215 @@ footer{
 /*Footer*/
 
 /*Media queris*/
-@media (max-width: 600px) {
-    .maxwidth {
+@media (max-width: 700px) {
+.maxwidth {
     max-width: 100%;
     padding: 0 1rem;
     gap: 1rem;
     align-self: stretch; 
-  }
+}
 
-  header {
+header {
     padding: 2rem 1rem;
     align-items: stretch;
-  }
+}
 
-  #logoitsa {
+#logoitsa {
     width: 60px; 
-  }
+}
 
-  .cabezaBody {
+.cabezaBody {
     margin: 4rem 0;
     gap: 3rem;
-  }
+}
 
 
-  .cabezaBody h1 {
+.cabezaBody h1 {
     font-size: 2rem;
     line-height: 1.05;
     max-width: 420px;
     margin: 0 auto;
     padding: 0 0.5rem;
-  }
+}
 
-  .cotizacontacto {
+.cotizacontacto {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-  .yellowBut, .invisibleBut {
+}
+.yellowBut, .invisibleBut {
     flex: 100%;
-  }
+}
 
-  .headNav{
+.headNav{
     display: none;
-  }
+}
 
-  #hamburguesa{
+#hamburguesa{
     display: flex;
     width: 60px;
 }
-    .videoBack{
-        display: none;
-    }
+.videoBack{
+    display: none;
+}
+.serviceCards{
+    flex-direction: column;
+}
+.card{
+    max-width: 100%;
+}
+
+/*Main*/
+ .services .titulo.maxwidth h2 {
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+  }
+  .services .iconos.maxwidth {
+    gap: 0.75rem;
+  }
+  .services .figura {
+    padding: 0.5rem;
+    text-align: center;
+  }
+  .services .serviceCards.maxwidth {
+    padding: 0 0.5rem;
+  }
+  .services .card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services .serviceImg {
+    border-radius: 0.75rem 0.75rem 0 0;
+  }
+  .services .serviceDesc {
+    padding: 0.75rem;
+  }
+
+  /* AboutUs */
+  .AboutUs .Mis {
+    gap: 0.75rem;
+    flex-direction: column;
+  }
+  .sub-subtitulo {
+    font-size: 18px;
+    justify-content: center;
+    width: 100%;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+  .pPadding {
+    padding: 0.6rem 1rem;
+  }
+  .socialProve.maxwidth {
+    padding: 1rem;
+    gap: 1.25rem;
+  }
+  .confianzas {
+    gap: 0.75rem;
+  }
+  .elementoConfianza {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.5rem;
+    min-width: 200px;
+    max-width: 320px;
+  }
+  /*Main*/
+  /*Footer*/
+    footer {
+    padding: 1.25rem 1rem;
+    gap: 1rem;
+  }
+
+  .piePrincipal {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .piePrincipal .isologo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    justify-content: center;
+  }
+  .piePrincipal .isologo #logoitsa {
+    width: 48px;
+    height: auto;
+  }
+  .piePrincipal .isologo .grupogoitsa {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .piePrincipal .direc,
+  .piePrincipal .Navegar,
+  .piePrincipal .Enlaces,
+  .piePrincipal .Contacto {
+    width: 100%;
+    max-width: 480px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+  }
+
+  .piePrincipal .footP {
+    margin-bottom: 0.25rem;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .piePrincipal .paddSp {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 0.15rem auto;
+    padding: 0.5rem 0.75rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .linkedin, .e-mail, .tel, .wats {
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  .linkedin img,
+  .e-mail img,
+  .tel img,
+  .wats img {
+    width: 20px;
+    height: auto;
+  }
+
+  .copy {
+    width: 100%;
+    text-align: center;
+    font-size: 0.85rem;
+    padding-top: 0.5rem;
+  }
+  /*Footer*/
+}
+@media (max-width: 900px){
+    .AboutUs .Mis {
+    gap: 0.75rem;
+    flex-direction: column;
+  }
+  .sub-subtitulo {
+    font-size: 18px;
+    justify-content: center;
+    width: 100%;
+  }
+  .subtitulo {
+    text-align: center;
+  }
+  .pPadding {
+    padding: 0.6rem 1rem;
+  }
 }
 /*Media queris*/

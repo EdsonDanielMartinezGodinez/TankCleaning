@@ -23,7 +23,6 @@ import tel from "./resources/telefono.png"
 import mail from "./resources/sobre.png"
 import ink from "./resources/linkedin.png"
 
-
 export const Tank = () => {
   return (
     
@@ -170,7 +169,7 @@ export const Tank = () => {
             <article></article>
         </main>
         <footer>
-            <section className='piePrincipal'>
+            <section className='piePrincipal maxwidth'>
                 <div className='isologo'>
                     <img id='logoitsa' src={logo} alt="Goitsa Logo"/>
                     <p className='grupogoitsa'><b>Grupo Goitsa</b></p>
@@ -179,15 +178,15 @@ export const Tank = () => {
                     <p className='footP'>Navegar</p>
                     <a href=""><button className='navBut paddSp'>Servicios</button></a>
                     <a href=""><button className='navBut paddSp'>Nosotros</button></a>
-                    <a href=""><button className='navBut paddSp'>Nuestra Experiencia</button></a>
+                    <a href=""><button className='navBut paddSp'>Experiencia</button></a>
                     <a href=""><button className='navBut paddSp'>Contactanos</button></a>
                 </div>
                 <div className='Enlaces direc'>
                     <p className='footP'>Enlaces</p>
-                    <a href=""><button className='navBut paddSp'>Politicas de Privacidad</button></a>
+                    <a href=""><button className='navBut paddSp'>Privacidad</button></a>
                     <a href=""><button className='navBut paddSp'>Aviso Legal</button></a>
-                    <a href=""><button className='navBut paddSp'>Terminos y Condiciones</button></a>
-                    <a href=""><button className='navBut paddSp'>Politica de Cookies</button></a>
+                    <a href=""><button className='navBut paddSp'>Terminos</button></a>
+                    <a href=""><button className='navBut paddSp'>Cookies</button></a>
                 </div>
                 <div className='Contacto direc'>
                     <p className='footP' id='sinpad'>Contacto</p>
@@ -209,7 +208,7 @@ export const Tank = () => {
                     </div>
                 </div>
             </section>
-            <section className='copy'>
+            <section className='copy maxwidth'>
                 <p>@ 2025 Grupo Goitsa All rights reserved</p>
             </section>
         </footer>
